@@ -76,7 +76,7 @@ class InitialViewController: UIViewController {
         labelLatitude.textAlignment       = .center
         labelLatitude.layer.masksToBounds = true
         labelLatitude.layer.cornerRadius  = 5
-        labelLatitude.text                = "Longitude: \(updatedLatitude)"
+        labelLatitude.text                = "Latitude: \(updatedLatitude)"
         
         self.view.addSubview(labelLatitude)
         labelLatitude.anchor(top:      labelLongitude?.bottomAnchor,
@@ -94,7 +94,6 @@ class InitialViewController: UIViewController {
         actionButtonGoMapView.layer.cornerRadius = 5
         
         actionButtonGoMapView.setTitle("Go To Map View", for: .normal)
-        
         
         self.view.addSubview(actionButtonGoMapView)
         actionButtonGoMapView.anchor(top:      labelLatitude?.bottomAnchor,
